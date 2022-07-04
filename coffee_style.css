@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: table;
+  margin: 22px 22px 22px 22px;
+  width: 100%;
+}
+header {
+  color: rgb(255, 255, 255, 1.5);
+  /* background-color: rgb(211, 211, 211, 0.3);*/
+  font-family: arial;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-image: url("coffee.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 250px;
+  opacity: 0.6;
+  /*position: absolute;*/
+  /*transform : rotate(20deg);*/
+}
+h1 {
+  padding: 0 0 20px 0;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+main {
+  display: inline-flex;
+}
+.nav {
+  background-color: burlywood;
+  padding: 20px;
+  height: 1470px;
+  border-radius: 20px;
+}
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 24px 30px 24px 30px;
+  margin: 0 30px 40px 10px;
+  width: 100px;
+  border-radius: 25px;
+  background-color: rgb(204, 142, 71);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+div {
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 0, 0.1);
+  font-size: small;
+  height: 200px;
+  margin: 0 22px 22px 0;
+  border: 5px solid black;
+  border-radius: 20px;
+  color: black;
+  overflow: auto;
+  padding: 20px;
+  transition-property: color, background-color, border;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 0.1s;
+  transition: 1s ease;
+}
+div:active {
+  color: darkblue;
+  background-color: lightgray;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+footer {
+  font-size: xx-small;
+  color: grey;
+  clear: both;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+h2 {
+  color: blueviolet;
+  font-size: 25px;
+  text-align: center;
+  color: goldenrod;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  list-style-type: square;
+}
+
+/*#food {
+  padding: 20px;
+  margin-left: 0 auto;
+}
+#achievements {
+  padding: 20px;
+}
+#me {
+  padding: 20px;
+}*/
+.nav1 a {
+  color: black;
+  background: rgb(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 20px 50px 20px 50px;
+  margin: 0 50px 0 50px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav1 a:hover {
+  background-color: lightgray;
+  color: blue;
+}
+.nav1 a:focus {
+  background-color: lightgray;
+  color: blue;
+}
+p:hover {
+  border: 10px solid lightblue;
+}
+p::first-letter {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+.nav1 a:visited {
+  color: black;
+}
+table {
+  border: 3px solid black;
+  border-radius: 0 0 25px 25px;
+  color: navy;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 50px 50px 0 50px;
+}
+tr:nth-child(odd) {
+  background: burlywood;
+}
+tr:nth-child(even) {
+  background: lightgrey;
+}
+tr:last-child {
+  border-radius: 0 0 25px 25px;
+}
+tr:last-child > td:first-child {
+  border-radius: 0 0 0 25px;
+}
+td {
+  padding: 25px;
+  text-align: center;
+}
+th {
+  padding: 25px;
+  text-align: center;
+}
+caption {
+  background: rgb(5, 50, 56);
+  border: 3px 3px 0 3px solid black;
+  border-radius: 25px 25px 0 0;
+  color: white;
+  padding: 30px;
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: xx-large;
+}
+.red {
+  color: red;
+}
+span {
+  visibility: hidden;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+td:hover > span {
+  visibility: visible;
+}
+form {
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 0, 0.1);
+  font-size: small;
+  margin: 0 22px 22px 0;
+  border: 5px solid black;
+  border-radius: 20px;
+  color: black;
+  padding: 20px;
+  width: 600px;
+}
+@media only screen and (min-width: 400px) {
+  .nav1 a {
+    color: black;
+    background: rgb(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    margin: 0 10px 0 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .nav1 a {
+    color: black;
+    background: rgb(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 20px 50px 20px 50px;
+    margin: 0 50px 0 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
